@@ -8,10 +8,45 @@
   <title>Hedi Ben Hamed</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
+  <style>
+    /* Ajoutez ces styles à votre balise style */
+    .portfolio-wrap {
+      position: relative;
+      overflow: hidden;
+    }
+
+    .portfolio-wrap img {
+      width: 100%;
+      height: auto;
+      transition: opacity 0.5s ease;
+    }
+
+    .download-button {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      opacity: 0;
+      transition: opacity 0.5s ease;
+    }
+
+    .portfolio-wrap:hover img {
+      opacity: 0.7;
+    }
+
+    .portfolio-wrap:hover .download-button {
+      opacity: 1;
+    }
+  </style> 
+
+
+
+
+
 
   <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="https://camo.githubusercontent.com/cae12fddd9d6982901d82580bdf321d81fb299141098ca1c2d4891870827bf17/68747470733a2f2f6d69726f2e6d656469756d2e636f6d2f6d61782f313336302f302a37513379765349765f7430696f4a2d5a2e676966" rel="icon">
+  <link href="https://camo.githubusercontent.com/cae12fddd9d6982901d82580bdf321d81fb299141098ca1c2d4891870827bf17/68747470733a2f2f6d69726f2e6d656469756d2e636f6d2f6d61782f313336302f302a37513379765349765f7430696f4a2d5a2e676966" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
   <link
@@ -35,7 +70,9 @@
   * Author: BootstrapMade.com
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
+
 </head>
+
 
 <body>
 
@@ -59,15 +96,16 @@
       <nav id="navbar" class="nav-menu navbar">
         <ul>
           <li><a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Home</span></a></li>
-          <li><a href="#Profil" class="nav-link scrollto"><i class="bx bx-user"></i> <span>Profile</span></a></li>
+          <li><a href="#profil" class="nav-link scrollto"><i class="bx bx-user"></i> <span>Profile</span></a></li>
           <li><a href="#skills" class="nav-link scrollto"><i class="bx bx-code-alt"></i> <span>Technical
                 Skills</span></a></li>
-          <li><a href="#resume" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Education and
-                Training</span></a></li>
+          <li><a href="#education" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Education </span></a></li>
           <li><a href="#projects" class="nav-link scrollto"><i class="bx bx-carousel"></i> <span>Completed
                 Projects</span></a></li>
-          <li><a href="#parcours" class="nav-link scrollto"><i class="bx bx-briefcase-alt-2"></i> <span>Professional
-                Journey</span></a></li>
+          <li><a href="#parcours" class="nav-link scrollto"><i class="bx bx-briefcase-alt-2"></i> <span>Experience and
+                Training</span></a></li>
+          <li><a href="#resume" class="nav-link scrollto"><i class="bx bx-detail"></i> <span>Resume </span></a>
+          </li>
 
 
         </ul>
@@ -86,10 +124,10 @@
   <main id="main">
 
     <!-- ======= Profil Section ======= -->
-    <section id="Profil" class="about">
+    <section id="profil" class="about">
       <div class="container">
 
-        <div class="section-title" style="line-height: 1.5; justify-content: center;">
+        <div class="section-title">
           <h2>Profil</h2>
           <p style="text-align: justify; padding:10px;width:auto;">
             Greetings! I am a computer engineer with a specialization in Web and Internet Technologies (TWIN). I
@@ -125,15 +163,15 @@
             <div class="row">
               <div class="col-lg-6">
                 <ul>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Full Name:</strong> <span>Ben Hamed Mohamed
-                      Hedi</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong>
-                    <span>hedibenhamed.pro@gmail.com</span>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Full-Name:</strong> <span> <strong> BEN HAMED</strong> Mohamed Hedi</span></li>
+                  <li>
+                  <i class="bi bi-chevron-right"></i> 
+                  <strong>Email:</strong>
+                  <a href="mailto:hedibenhamed.pro@gmail.com">  <span>hedibenhamed.pro@gmail.com</span></a>
                   </li>
                   <li><i class="bi bi-chevron-right"></i> <strong>Date of Birth:</strong> <span>October 25, 1999</span>
                   </li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <span>+216 58079422 / +33
-                      0620360078</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <span>+216 58079422 / +330620360078</span></li>
                   <li><i class="bi bi-chevron-right"></i> <strong>Region:</strong> <span>La Mannouba</span></li>
                   <li><i class="bi bi-chevron-right"></i> <strong>Level:</strong> <span>Master / Engineering</span></li>
                 </ul>
@@ -328,38 +366,47 @@
     </section><!-- End Skills Section -->
 
     <!-- ======= Resume Section ======= -->
-    <section id="resume" class="resume">
+    <section id="education" class="resume">
       <div class="container">
 
         <div class="section-title">
-          <h2>Education and Training</h2>
+          <h2>Education </h2>
         </div>
+
+
 
         <div class="row">
           <div class="col-lg-6" data-aos="fade-up">
-            <div class="resume-item pb-0">
-              <h4>Bachelor's Degree in Computer Science</h4>
-              <h5>June 2018</h5>
-              <p><em>Ibn Abi Dhief High School, Mannouba</em></p>
+            <div class="resume-item">
+              <h4>Holder of a National Diploma in Computer Engineering</h4>
+              <h5>October 2023</h5>
+              <p><em>Private Higher School ESPRIT, Ghazela</em></p>
+            </div>
+             <div class="resume-item">
+              <h4>Engineering Cycle (specialized in Web Development)</h4>
+              <h5>September 2021 - June 2022</h5>
+              <p><em>Private Higher School ESPRIT, Ghazela</em></p>
             </div>
 
             <div class="resume-item">
+              <h4>Full Stack Angular Spring Boot Course</h4>
+              <h5>July 2021</h5>
+              <p><em>TTC Training Center, Montplaisir</em></p>
+            </div>
+
+             <div class="resume-item">
               <h4>Integrated Preparatory Cycle</h4>
               <h5>Sept 2018 - June 2021</h5>
               <p><em>Esprit, Ghazela</em></p>
             </div>
-
-            <div class="resume-item">
-              <h4>Full Stack Angular Spring Boot Training</h4>
-              <h5>July 2021</h5>
-              <p><em>TTC: Tunisian Training Consulting, Montplaisir</em></p>
+           
+            <div class="resume-item pb-0">
+              <h4>Baccalaureate in Computer Science</h4>
+              <h5>June 2018</h5>
+              <p><em>Ibn Abi Dhief High School, Mannouba</em></p>
             </div>
 
-            <div class="resume-item">
-              <h4>Web Development Specialty</h4>
-              <h5>Sept 2021 - June 2022</h5>
-              <p><em>Esprit, Ghazela</em></p>
-            </div>
+           
           </div>
         </div>
 
@@ -480,22 +527,39 @@
 
 
 
+
+
     <!-- ======= Resume Parcours ======= -->
     <section id="parcours" class="resume">
       <div class="container">
 
         <div class="section-title">
-          <h2>Experience </h2>
+          <h2>Experience and Training </h2>
         </div>
 
         <div class="row">
           <div class="col-lg-6" data-aos="fade-up">
             <div class="resume-item pb-0">
-              <h4>Full-Stack JavaScript Developer </h4>
-              <h5>June. 2022</h5>
-
+              <h4>Internship as a DevOps Engineer and Automated Tester in Java</h4>
+              <h5>March 2023 - August 2023</h5>
+              <p><em>Orange France </em></p>
+            </div>
+            <div class="resume-item pb-0">
+              <h4>Full Stack JS (MERN) Developer</h4>
+              <h5>September 2022 - February 2023</h5>
               <p><em>The Tunisian startup. <strong>SofiSoft</strong> </em></p>
+            </div>
 
+            <div class="resume-item pb-0">
+              <h4>Internship as a Full Stack JS (MERN) Developer</h4>
+              <h5>June 2022 - September 2022</h5>
+              <p><em>The Tunisian startup. <strong>SofiSoft</strong> </em></p>
+            </div>
+
+            <div class="resume-item pb-0">
+              <h4>Internship as a Java JEE Developer</h4>
+              <h5>July 2020 - September 2020</h5>
+              <p><em>The Team Consulting </em></p>
             </div>
 
           </div>
@@ -506,7 +570,29 @@
     </section>
 
     <!-- End Parcours Section -->
+    <section id="resume" class="resume">
+      <div class="container">
 
+        <div class="section-title">
+          <h2>Resume </h2>
+        </div>
+       
+        <div class="row">
+          <div class="col-lg-6 portfolio-item" data-aos="fade-up" data-aos-delay="400">
+            <div class="portfolio-wrap" style="position: relative;">
+              <img src="assets/img/hedi-ben-hamed.jpg" class="img-fluid" alt="Hedi Ben Hamed" onclick="openFullScreen('assets/img/hedi-ben-hamed.jpg')">
+              <div class="download-button">
+                <a href="assets/img/hedi-ben-hamed.pdf" target="_blank" class="btn btn-success" download="hedi-ben-hamed.pdf">
+                  <button type="button" class="btn btn-success">Download</button>
+                </a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
 
 
 
@@ -514,8 +600,6 @@
 
 
   </main><!-- End #main -->
-
-  <!-- ======= Footer ======= -->
 
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
       class="bi bi-arrow-up-short"></i></a>
